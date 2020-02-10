@@ -56,8 +56,8 @@ def main():
 
     print("Byte Location: ",byte_loc)
     print("Flip Location: ",flip_loc)
-    SZcmd = ['bash', '/users/mlhickm/Compression_Injection-Power_Experiment/injection_experiments.sh', str(sys.argv[9]),  str(byte_loc), str(flip_loc)]
-    #SZcmd = ['bash', '/users/mlhickm/Compression_Injection-Power_Experiment/injection_experiments.sh', str(compression_arg), str(byte_loc), str(flip_loc)]
+    SZcmd = ['bash', '/users/gfwilki/Compression_Injection-Power_Experiment/injection_experiments.sh', str(sys.argv[9]),  str(byte_loc), str(flip_loc)]
+    #SZcmd = ['bash', '/users/gfwilki/Compression_Injection-Power_Experiment/injection_experiments.sh', str(compression_arg), str(byte_loc), str(flip_loc)]
     timeout_limit = 7 # If taking too long bc injection broke stuff, go ahead and kill experiment
 
     rapl = subprocess.Popen(cmd, stdin = subprocess.PIPE, stdout=subprocess.PIPE)

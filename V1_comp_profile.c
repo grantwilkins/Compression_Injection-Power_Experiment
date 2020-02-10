@@ -38,7 +38,7 @@ int main(){
 	}
 
 	// Read in ya data
-	char data_path[512] = "/users/mlhickm/rapl_power_monitoring/compression_profiles_experiment/SZ_test_data/";
+	char data_path[512] = "/users/gfwilki/rapl_power_monitoring/compression_profiles_experiment/SZ_test_data/";
 	//float data[128];
 	int data_size = 8192;
 	//float data[2000000];

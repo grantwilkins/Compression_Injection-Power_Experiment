@@ -3,7 +3,7 @@
 ##  the output of the compressed data of SZ and ZFP.
 
 ##  PLEASE UPDATE THESE VARIABLES BEFORE COMPILING
-SZPATH 	= /users/mlhickm/Compression_Injection-Power_Experiment/SZ_Files
+SZPATH 	= /users/gfwilki/Compression_Injection-Power_Experiment/SZ_Files
 
 ##  COMPILER 
 CC	= gcc

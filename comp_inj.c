@@ -129,10 +129,8 @@ void szCompressionInjection(char *config, int *data_dimensions, int char_loc, in
 		}
 
 		// Compress the data here
-		sleep(6);
 		size_t outsize;
 		unsigned char *bytes = SZ_compress(SZ_FLOAT, DATA, &outsize, r5, r4, r3, r2, r1);
-		sleep(6);
 		printf("Compressed Size in Bytes: %zu\n", outsize);
 
 		if (DEBUG){
@@ -178,7 +176,6 @@ void szCompressionInjection(char *config, int *data_dimensions, int char_loc, in
 		if (DEBUG) {
 			printf("Successfully decompressed data\n");
 		}
-		sleep(6);
 	}
 }
 
@@ -208,8 +205,6 @@ int main(int argc, char *argv[]){
 	if (signal (SIGSEGV, sigHandler) == SIG_ERR){
         	printf("Error setting segfault handler...\n");
 	}
-
-	sleep(6);
 	printf("Starting Experiment\n");
 
 	// PARSE USER INPUT
@@ -473,7 +468,6 @@ int main(int argc, char *argv[]){
 	if (RET_DATA){
 		free(RET_DATA);
 	}
-	sleep(6);
 	printf("End of Experiment\n");
 	return 0;
 }

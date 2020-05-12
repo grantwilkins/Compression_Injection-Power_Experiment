@@ -307,7 +307,9 @@ int main(int argc, char *argv[]){
 	printf("Original Data Size in Bytes: %ld\n", sizeof(float)*data_size);
 
 	// Call compression injection function
-	szCompressionInjection(config, data_dimensions, char_loc, flip_loc);
+	int countCompressionTimes;
+	for(countCompressionTimes = 0; countCompressionTimes < 5; countCompressionTimes++)
+		szCompressionInjection(config, data_dimensions, char_loc, flip_loc);
 
 	// Print small before and after if debugging is turned on
 	if (DEBUG){	

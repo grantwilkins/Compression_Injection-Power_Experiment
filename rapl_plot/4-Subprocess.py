@@ -14,7 +14,9 @@ COMPRESSION_SIZE = {
     'PW_1e2': 81505624,
     'PW_1e3': 138572647,
     'PSNR_30': 70238798,
-    'PSNR_60': 75895303
+    'PSNR_60': 75895303,
+    'PSNR_90': 77500000,
+    'PSNR_120': 79000000
 }
 
 # Calls C Program, checks to see if it finished near instantly.

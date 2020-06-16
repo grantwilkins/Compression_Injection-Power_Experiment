@@ -29,6 +29,12 @@ then
 elif [ "$1" = "PSNR_60" ]
 then
         ./comp_inj /users/gfwilki/Compression_Injection-Power_Experiment/data/SDRBENCH_Data/512x512x512/dark_matter_density.dat 0,0,512,512,512 ./config/sz_psnr_60.config $2 $3
+elif [ "$1" = "PSNR_90" ]
+then
+        ./comp_inj /users/gfwilki/Compression_Injection-Power_Experiment/data/SDRBENCH_Data/temperature.dat/ 0,0,512,512,512 ./config/sz_psnr_30.config $2 $3
+elif [ "$1" = "PSNR_120" ]
+then
+        ./comp_inj /users/gfwilki/Compression_Injection-Power_Experiment/data/SDRBENCH_Data/temperature.dat/ 0,0,512,512,512 ./config/sz_psnr_30.config $2 $3
 else
 	echo "INVALID"
 fi

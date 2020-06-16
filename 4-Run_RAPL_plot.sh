@@ -20,6 +20,8 @@ mkdir power_results
 #exp='PW_1e3'
 #exp='PSNR_30'
 exp='PSNR_60'
+#exp='PSNR_90'
+#exp='PSNR_120'
 
 counter=1
 while [ $counter -le 13 ]

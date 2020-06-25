@@ -24,7 +24,7 @@ exp='PSNR_60'
 #exp='PSNR_120'
 
 counter=1
-while [ $counter -le 13 ]
+while [ $counter -le 8 ]
 do
 	echo $counter
 	python3 4-Subprocess.py power_results/$counter-results.PACKAGE_ENERGY_PACKAGE0 power_results/$counter-results.PACKAGE_ENERGY_PACKAGE1 power_results/1-results.DRAM_ENERGY_PACKAGE0 power_results/1-results.DRAM_ENERGY_PACKAGE1 power_results/1-results.PP0_ENERGY_PACKAGE0 power_results/1-results.PP0_ENERGY_PACKAGE1 power_results/1-results.UNCORE_PACKAGE0 power_results/1-results.UNCORE_PACKAGE1 $exp
